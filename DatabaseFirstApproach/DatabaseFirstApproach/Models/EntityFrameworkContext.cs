@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+
+namespace DatabaseFirstApproach.Models;
+
+public partial class EntityFrameworkContext : DbContext
+{
+    public EntityFrameworkContext()
+    {
+    }
+
+    public EntityFrameworkContext(DbContextOptions<EntityFrameworkContext> options)
+        : base(options)
+    {
+    }
+
+    public virtual DbSet<Employee> Employees { get; set; }
+
+    public virtual DbSet<Student> Students { get; set; }
+
+    public virtual DbSet<Student> Company { get; set; }
+
+
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        if(!optionsBuilder.IsConfigured)
+        {
+
+        }
+    }
+
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Employee>(entity =>
+        {
+            entity.ToTable("Employee");
+
+            entity.Property(e => e.Designation)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Name)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<Student>(entity =>
+        {
+            entity.Property(e => e.StudentGender)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasColumnName("student_gender");
+            entity.Property(e => e.StudentName)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("student_name");
+        });
+
+        OnModelCreatingPartial(modelBuilder);
+    }
+
+    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+}
