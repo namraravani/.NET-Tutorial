@@ -6,3 +6,20 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<div style="background-color :aqua">
+@ViewData["data1"]
+<br/>
+@ViewData["data2"]
+<br />
+    @{
+        ViewData["data3"] = "skdnsa";
+    }
+
+    @{
+        foreach(var item in ViewData["data4"] as IList<string>)
+        {
+            <h4>@item</h4>
+        }
+    }
+</div>

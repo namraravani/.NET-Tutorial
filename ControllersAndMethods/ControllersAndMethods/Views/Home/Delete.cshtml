@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Delete";
+    string dateTime = DateTime.Now.ToString();
+}
+
+@if (DateTime.IsLeapYear(DateTime.Now.Year))
+{
+    @DateTime.Now.Year @:is a leap year.
+}
+else
+{
+    @DateTime.Now.Year @:is not a leap year.
+}
+
+<h1>Delete</h1>
+
+<h2>"@dateTime"</h2>
