@@ -1,0 +1,6 @@
+@APIHealthCheckingDemo_HostAddress = http://localhost:5053
+
+GET {{APIHealthCheckingDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,43 @@
+[33mcommit 30423c9870cd7c5603ab9a9eb9ed4dfa2a78649e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: namraravani <namraravani8@gmail.com>
+Date:   Wed Sep 11 15:44:20 2024 +0530
+
+    Revert "Completed-with-demo-implementation-of-OAuth-Authorization"
+    
+    This reverts commit 508e9d981e200cc61ab5eb748c9ceddbd661cb91.
+
+[33mcommit 508e9d981e200cc61ab5eb748c9ceddbd661cb91[m
+Author: namraravani <namraravani8@gmail.com>
+Date:   Wed Sep 11 15:39:27 2024 +0530
+
+    Completed-with-demo-implementation-of-OAuth-Authorization
+
+[33mcommit 4ca422bc734a0c36ec3a33ab31a66b8e9e9389af[m
+Author: namraravani <namraravani8@gmail.com>
+Date:   Fri Sep 6 19:04:26 2024 +0530
+
+    completed JWT tokens and implementation of Authentication using Identity framework
+
+[33mcommit 641b9afdbf937d9837b83bf6854128310e99442e[m
+Author: namraravani <namraravani8@gmail.com>
+Date:   Thu Sep 5 17:33:41 2024 +0530
+
+    Completed-with-fluent-validation-in-mvc
+
+[33mcommit 8d9c5961199e1d1d2545b7b6a689aced2cf32a26[m
+Author: namraravani <namraravani8@gmail.com>
+Date:   Tue Sep 3 11:29:03 2024 +0530
+
+    Started-with-learning-MVC
+
+[33mcommit e89e830e04e1e19cf7b6cc7bd970b0aa7ab5550f[m
+Author: namraravani <namraravani8@gmail.com>
+Date:   Wed Aug 28 17:15:11 2024 +0530
+
+    Add project files.
+
+[33mcommit da10a1c4846ff74db44dd75c50966e81dc8c12ac[m
+Author: namraravani <namraravani8@gmail.com>
+Date:   Wed Aug 28 17:15:06 2024 +0530
+
+    Add .gitattributes and .gitignore.
